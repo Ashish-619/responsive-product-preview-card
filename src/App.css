@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman";
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+.main {
+  width: 45vw;
+  height: auto;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Move the card back by 50% of its own width and height */
+}
+
+.main img {
+  width: 22vw;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#letter {
+  font-weight: 300;
+  letter-spacing: 5px;
+  font-size: 1.5vw;
+}
+
+.inner {
+  margin-left: 5%;
+  margin-top: 4%;
+  width: 40%;
+  height: 100%;
+}
+
+#price {
+  color: hsl(158, 36%, 37%);
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  font-size: 2vw;
+}
+
+#discount {
+  color: hsl(228, 12%, 48%);
+  display: inline-block;
+  text-decoration: line-through;
+  padding: 5px;
+  vertical-align: middle;
+  font-size: 1.2vw;
+}
+
+.inner button {
+  background-color: hsl(158, 36%, 37%);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 10% auto;
+  background-image: url("./images/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 20%;
+  background-size: 1.5vw;
+  font-size: 1.5vw;
+}
+
+p {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: hsl(212, 21%, 14%);
+  font-size: 1.5vw;
+}
+
+.inner h1 {
+  font-size: 2vw;
+}
+
+@media (max-width: 768px) {
+  .main {
+    width: 30vw;
+    height: auto;
+  }
+
+  .main img {
+    width: 30vw;
+    height: 20vh;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+    margin-left: -90%;
+    margin-top: 20vh;
+    width: 25vw;
+  }
+
+  #price {
+    display: inline-flex;
+    margin-right: 10px;
+  }
+
+  #discount {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+  }
+}
